@@ -1,0 +1,107 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 144909200,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "browser is opened",
+            "match": {
+              "location": "search.browser_is_opened()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 153300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hook.beforesearch()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Test google search2",
+        "description": "",
+        "id": "google-search;test-google-search2",
+        "after": [
+          {
+            "result": {
+              "duration": 280500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hook.aftersearch()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10161434700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User on google search page",
+            "match": {
+              "location": "search.user_on_google_search_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4864226200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "enter keyword and search",
+            "match": {
+              "location": "search.enter_keyword_and_search()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 975707500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "shows information",
+            "match": {
+              "location": "search.shows_information()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@search"
+          }
+        ]
+      }
+    ],
+    "name": "Google Search",
+    "description": "",
+    "id": "google-search",
+    "keyword": "Feature",
+    "uri": "search.feature"
+  }
+]

@@ -18,6 +18,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class search {
 	WebDriver driver;
 	Properties data; 
+	@Given("^browser is opened$")
+	public void browser_is_opened() throws Throwable {
+		System.out.println("browser opened");
+	}
 	@Given("^User on google search page$")
 	public void user_on_google_search_page() throws Throwable {
 		data=new Properties();
@@ -44,5 +48,6 @@ public class search {
 		System.out.println(title);
 		//assert.assertEquals(title, expectedtitle);
 		Assert.assertEquals(title, expectedtitle, "title not matching");
+		driver.quit();
 	}
 }
